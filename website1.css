@@ -1,0 +1,187 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    color:#000000;
+    scroll-behavior: smooth;
+}
+.container{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 60px  800px 500px 900px 800px 500px 500px ;
+    height:100vh;
+    width:100%;
+    grid-template-areas:"nav nav nav"
+    "main main main"
+    "submain submain submain"
+    "servicecards servicecards servicecards"
+    "images images images"
+    "form form form"
+    "footer footer footer" ;
+}
+.nav{
+    grid-area: nav;
+    display:flex;
+    background-color:#dbf9ff;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    font-weight: 600;
+    flex-direction: row;
+}
+.nav ul{
+    display:flex;
+    flex-direction: row;
+}
+.nav ul li{
+    padding: 20px;
+}
+.main{
+    margin-top: 20px;
+    grid-area: main;
+    padding-top: 220px;
+    background-color: rgb(255, 255, 255);
+}
+
+.main img{
+   float: right;
+   margin-right: 30px;
+}
+.submain{
+    grid-area: submain;
+    background-color:#dbf9ff;
+}
+.sub1{
+    padding-top: 40px;
+}
+.sub2{
+    padding-top: 80px;
+}
+.sub1 img{
+    float: left;
+    display: block;
+}
+.sub2 img{
+    float: right;
+    display: block;
+}
+.servicecards{
+    grid-area: servicecards;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#ffffff;
+}
+.sc{
+    width: 150px;
+    height: 150px;
+    gap:30px;
+    padding-bottom: 300px;
+    margin-right: 90px;
+    margin-left: 50px;
+}
+.images{
+    grid-area: images;
+    background-color:#dbf9ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.im{
+    width: 150px;
+    height: 150px;
+    gap:30px;
+    margin-right: 90px;
+    margin-left: 50px;
+       padding-bottom: 300px;
+}
+.form{
+     grid-area: form; 
+    margin-top: 2%;
+    background-color: #ffffff;
+    padding-top: 70px;
+}
+
+#form1{
+   text-align: center;
+    padding-bottom: 20px;
+}
+#first{
+    padding: 5px;
+}
+#last{
+    padding: 5px;
+}
+#pn{
+    padding: 5px;
+}
+#ei{
+    padding: 5px;
+}
+.footer{
+    grid-area: footer;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #dbf9ff;
+}
+.f{
+    display: flex;
+    justify-content: space-evenly;
+}
+.f p{
+    display: flex;
+    padding-right: 60px;
+    padding-left: 80px;
+    text-align: center;
+}
+.f1 p{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+button:hover{
+    background-color: rgb(223, 198, 161);
+}
+.ctr {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 150px 250px;
+
+}
+.mn1 {
+    background-color: #DDEB9D;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.mn1 h1 {
+    margin-top: 40px;
+    font-weight: 900;
+}
+.mn1 img {
+    height: 40px;
+}
+.mn2 {
+    background-color: #FAF6E9 ;
+    margin-bottom: 20px;
+}
+.header {
+    display: grid;
+    grid-template-columns: 100vh 100vh;
+    grid-template-rows:350px 400px 20px ;
+    grid-template-areas: 
+    "s1 s3"
+    "s2 s3";
+
+}
+.s1 {
+    background-color: bisque;
+    margin-left: 50px;
+}
